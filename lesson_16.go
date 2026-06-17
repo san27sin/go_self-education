@@ -25,5 +25,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("сделать задачу")
+	var celsius int = 36
+	fmt.Printf("Введите температуру в Цельсиях: ")
+	fmt.Scan(&celsius)
+	fahrenheit := float64((float64(celsius) * 9 / 5) + 32)
+	fmt.Printf("Температура: %d°C = %.2f°F\n", celsius, fahrenheit)
 }
