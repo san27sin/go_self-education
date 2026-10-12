@@ -5,12 +5,14 @@ import (
 	"os"
 	"go_self-education/lessons/lesson79"
 	"go_self-education/lessons/lesson80"
+	"go_self-education/lessons/lesson81"
 )
 
 // lessons связывает номер урока с функцией, которая его запускает
 var lessons = map[string]func(){
 	"79": lesson79.Run,
 	"80": lesson80.Run, // раскомментировать, когда у MyReader появится метод Read
+	"81": lesson81.Run,
 }
 
 func main() {
