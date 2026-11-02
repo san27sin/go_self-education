@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	// go run . -lesson <number>
 	lesson := flag.Int("lesson", 0, "номер урока")
 	flag.Parse()
 	switch *lesson {
@@ -14,6 +15,8 @@ func main() {
 		lessons.RunLesson82()
 	case 83:
 		lessons.RunLesson83()
+	case 84:
+		lessons.RunLesson84()
 	default:
 		fmt.Println("Такого урока нету")
 	}
