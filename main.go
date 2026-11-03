@@ -17,6 +17,8 @@ func main() {
 		lessons.RunLesson83()
 	case 84:
 		lessons.RunLesson84()
+	case 85:
+		lessons.RunLesson85()
 	default:
 		fmt.Println("Такого урока нету")
 	}
